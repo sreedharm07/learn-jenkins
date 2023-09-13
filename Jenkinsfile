@@ -27,8 +27,8 @@ pipeline {
     }
      stage('deploy') {
           steps {
-            echo 'Hello World'
+            echouug 'Hello World'
           }
-        }}
+        }
   }
 }
