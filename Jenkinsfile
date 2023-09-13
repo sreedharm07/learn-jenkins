@@ -1,26 +1,29 @@
 pipeline {
-    agent any
+  agent any
 
-    stages {
-        stage('s1') {
-            steps {
-                echo 'Hello World'
-            }
-        }
+  stages {
+    stage('Compile') {
+      steps {
+        echo 'Hello World'
+      }
     }
 
-     stages {
-        stage('s2') {
-            steps {
-                echo 'Hello World'
-            }
-        }
+    stage('Test') {
+      steps {
+        echo 'Hello World'
+      }
     }
-     stages {
-        stage('s3') {
-            steps {
-                echo 'Hello World'
-            }
-        }
+
+    stage('Code Quality') {
+      steps {
+        echo 'Hello World'
+      }
     }
+
+    stage('Code Security') {
+      steps {
+        echo000 'Hello World'
+      }
+    }
+  }
 }
