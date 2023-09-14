@@ -1,10 +1,10 @@
 //vars,functions
 
 node {
-def x=2
+def x =2
 env.y = 3
 stage('stageee1'){
-echo x
+print x
 }
 stage('stageee2'){
 sh 'echo y - ${x}'
