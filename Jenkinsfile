@@ -1,6 +1,5 @@
 pipeline {
-  agent any
-
+    agent { node { label 'jenkins-agent' } }
   stages {
     stage('Compile') {
       steps {
@@ -25,7 +24,7 @@ pipeline {
         echo 'Hello World'
       }
     }
-     stage('deploy-finalstep') {
+     stage('deploy') {
           steps {
             echo 'Hello World'
           }
