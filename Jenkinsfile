@@ -1,4 +1,19 @@
+//vars,functions
 
+node{
+def x=2
+env.y = 3
+stage(1){
+echo x
+}
+stage(2){
+sh 'echo y - ${x}'
+sample()
+}
+}
+
+
+// conditions
 node {
 def x=1
 env.y = 3
@@ -14,10 +29,6 @@ if (x > 10){
          sh 'echo x - ${y}'
         }
 }
-
-
-
-
 
 def sample() {
 print "its a function"
