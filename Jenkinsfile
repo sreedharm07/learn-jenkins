@@ -5,3 +5,11 @@ def x=1
             print x
     }
 }
+
+node {
+env.y = 2
+    stage('stage1') {
+            echo 'this is stage1'
+            sh '${y}'
+    }
+}
