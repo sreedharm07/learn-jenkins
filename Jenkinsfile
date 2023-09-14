@@ -3,7 +3,7 @@
 node {
 def x=1
 env.y = 3
-if (x>y){
+if (x > 10){
     stage('stage1') {
       echo 'this is stage1'
        print x
