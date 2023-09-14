@@ -8,7 +8,7 @@ def x=1
 
 node {
 env.y = 2
-    stage('stage2') {
+    stage('stage1') {
             echo 'this is stage1'
             sh 'echo x - ${y}'
     }
