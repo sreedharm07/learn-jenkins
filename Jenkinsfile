@@ -1,4 +1,3 @@
-//vars,functions
 
 node {
 def x=1
