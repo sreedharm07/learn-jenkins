@@ -8,12 +8,13 @@ if (x > 10){
        print x
        sample()
     }
+    }
     else
     stage('stage2') {
          sh 'echo x - ${y}'
         }
-        }
 }
+
 
 
 
