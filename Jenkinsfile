@@ -25,7 +25,7 @@ pipeline {
         echo 'Hello World'
       }
     }
-     stage('deploy-final') {
+     stage('deploy-finalstep') {
           steps {
             echo 'Hello World'
           }
