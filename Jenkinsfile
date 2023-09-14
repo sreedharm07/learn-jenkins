@@ -3,10 +3,10 @@
 node {
 def x=2
 env.y = 3
-stage('1'){
+stage('st1'){
 echo x
 }
-stage('2'){
+stage('st2'){
 sh 'echo y - ${x}'
 sample()
 }
