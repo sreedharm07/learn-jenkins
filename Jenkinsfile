@@ -6,6 +6,6 @@ env.y = 3
             print x
     }
     stage('stage2') {
-         sh '${y}
+         sh '${y}'
         }
 }
