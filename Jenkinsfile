@@ -1,15 +1,11 @@
 node {
 def x=1
+env.y = 3
     stage('stage1') {
             echo 'this is stage1'
             print x
     }
-}
-
-node {
-env.y = 2
-    stage('stage1') {
-            echo 'this is stage1'
-            sh 'echo x - ${y}'
-    }
+    stage('stage2') {
+         sh '${y}
+        }
 }
